@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Product</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica, sans-serif;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+header {
+    background: rgb(0, 0, 0);
+    padding-top: 10px;
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+header ul {
+    margin: 0;
+    padding: 0;
+}
+header li {
+    display: inline;
+    padding: 0 30px 0 30px;
+    line-height: 3;
+    @media (max-width: 600px) {
+    flex-wrap: wrap;
+  }
+}
+
+header #header-img {
+    float: left;
+}
+
+header #nav-bar {
+    float: right;
+}
+
+#iphone {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    color: none;
+}
+.price {
+    text-align: center;
+}
+.btn {
+    align-content: center;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #fff;
+    padding: 10px 15px
+}
+@media (max-width: 700px){
+    #iphone{
+    display: flex;
+    flex-flow: column wrap;
+}
+}
+  
+    </style>
+</head>
+
+<body>
+   <header id="header">
+    <div class="container">
+        <div>
+            <img src="http://www.germinum.com/wp-content/uploads/2017/06/iosfinal.png" height="55px" width="55px" id="header-img">
+        </div>
+
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#mac">Mac</a></li>
+                <li><a class="nav-link" href="#ipad">iPad</a></li>
+                <li><a class="nav-link" href="#iphone">iPhone</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <div id="home">
+        <img src="https://okayteam.files.wordpress.com/2016/04/2000px-apple_logo_black-svg.png?w=660">
+        <h2>There's more in the making.</h2>
+        <p>Introducing the new iPad Pro, MacBook Air and Mac mini.</p>
+        <p>Powerful tools to imagine and create amazing things.</p>
+        <a href="https://youtu.be/wFTmQ27S7OQ">Watch the Keynote</a>
+    </div><br>
+
+    <div class="products" id = "mac">
+        <h2>Macbook Air</h2>
+        <h3>Lightness strikes again.</h3>
+        <a href="https://www.apple.com/in/macbook-air/">Learn more</a>
+        <img src="https://cdn2.macworld.co.uk/cmsdata/features/3605337/macbook-air-gold-model.jpg" alt="macbook air" width="600px">
+        <p>The new thinner and lighter MacBook Air features a brilliant Retina display, the security and convenience of Touch ID, the latest-generation keyboard and a Force Touch trackpad. And with an enclosure made with 100 per cent recycled aluminium, it’s the greenest Mac ever. MacBook Air is your perfectly portable, do-it-all notebook.</p><br>
+        <iframe width="640" height="460" src="https://www.youtube.com/embed/hs1HoLs4SD0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div><br>
+
+    <div class="products" id="ipad">
+        <h2>iPad Pro</h2>
+        <h3>All new. All Screen. All powerful.</h3>
+        <a href="https://www.apple.com/in/ipad-pro/">Learn more</a>
+        <img src="https://cdn2.macworld.co.uk/cmsdata/features/3492180/ipad-pro_2018.jpg" alt="ipad pro" width="600px">
+        <p>Completely redesigned and packed with our most advanced technology, including an edge-to-edge Liquid Retina display, Face ID, an A12X Bionic chip, and introducing the new Apple Pencil and Smart Keyboard Folio. It’s the biggest change to iPad since iPad.</p><br>
+        <iframe id="video" width="640" height="360" src="https://www.youtube.com/embed/YJ5q8Wrkbdw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+<div class="products">
+    <section id="iphone">
+        <div class="model">
+            <h2>iPhone XS</h2>
+            <img src="https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-xs-new.jpg">
+            <ol>
+                <li>Display: 5.8"</li>
+                <li>Storage: 64GB</li>
+                <li>Camera: 12 MP + 12 MP</li>
+                <li>RAM: 4 GB</li>
+                <li>Battery: 2658mAh</li>
+            </ol>
+            <h3 class="price">$999</h3>
+            <button class="btn"><a href="https://www.apple.com/in/iphone-xs/">Learn more</a></button>
+            <button class="btn">Buy</button>
+        </div>
+        <div>
+            <h2>iPhone XS Max</h2>
+            <img src="https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-xs-max-new1.jpg">
+            <ol>
+                <li>Display: 6.5"</li>
+                <li>Storage: 64 GB</li>
+                <li>Camera: 12 MP + 12 MP</li>
+                <li>RAM: 4 GB</li>
+                <li>Battery: 3174 mAh</li>
+            </ol>
+            <h3 class="price">$1099</h3>
+            <button class="btn"><a href="https://www.apple.com/in/iphone-xs/a12-bionic/">Learn more</a></button>
+            <button class="btn">Buy</button>
+
+        </div>
+        <div>
+            <h2>iPhone XR</h2>
+            <img src="https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-xr-new.jpg">
+            <ol>
+                <li>Display: 6.1"</li>
+                <li>Storage: 64 GB</li>
+                <li>Camera: 12 MP</li>
+                <li>RAM: 3 GB</li>
+                <li>Battery: 2942 mAh</li>
+            </ol>
+            <h3 class="price">$749</h3>
+            <button class="btn"><a href="https://www.apple.com/in/iphone-xr/">Learn more</a></button>
+            <button class="btn">Buy</button>
+        </div>
+    </section>
+    </div>
+    </div>
+      
+       <div class="container">
+       <section>
+        <h3>Subscribe for newsletter</h3>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input name="email" id="email" type="email" placeholder="Enter your email address" required />
+            
+            <input id="submit" type="submit" value="Subscribe" class="btn">
+        </form>
+    </section><br>
+    </div>
+
+    <div class="container">
+        <footer>
+            <span>&copy Coded by Rahul Kumar Mishra</span>
+        </footer>
+    </div>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
